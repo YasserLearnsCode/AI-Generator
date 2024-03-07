@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="src/style.css" rel="stylesheet" />
-    <title>AI Generator</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <title>AI Recipe Generator</title>
   </head>
   <body>
     <div class="container">
@@ -13,7 +15,7 @@
       </header>
 
       <main>
-        <form action="">
+        <form action="" id="conditioner-generator-form">
           <input
             type="text"
             required
@@ -22,9 +24,9 @@
             autocomplete="off"
             class="instruction"
           />
-          <input type="submit"  class="submit-button"/>
+          <input type="submit" class="submit-button" />
         </form>
-        <div class="conditioner">
+        <div class="conditioner" id="conditioner">
           Ingredient
           <br />
           Recipe
