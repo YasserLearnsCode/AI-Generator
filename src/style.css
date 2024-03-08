@@ -1,11 +1,12 @@
 body {
-  background-color: aliceblue;
+  background-image: url("../images/hair.jpg");
+  background-size: cover;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
   margin: 120px auto;
-  max-width: 600px;
+  max-width: 500px;
   padding: 20px;
 }
 
@@ -19,9 +20,10 @@ main {
 
 h1 {
   font-weight: 800;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1.5;
   text-align: center;
+  color: white;
 }
 
 form {
@@ -37,7 +39,7 @@ form {
   border: 1px solid black;
   border-radius: 10px;
   width: 80%;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
 }
@@ -47,6 +49,8 @@ form {
   background-color: black;
   color: white;
   width: 150px;
+  font-size: 18px;
+  font-weight: bold;
   border: none;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
@@ -63,8 +67,19 @@ form {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+a {
+  font-weight: bold;
 }

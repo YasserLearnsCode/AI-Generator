@@ -18,6 +18,9 @@ function handleSubmit(event) {
   let apiKey = `1d4e1fa31e8d90b62bfb5t73ob432508`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${ingredientPrompt}&context=${context}&key=${apiKey}`;
 
+  let conditionerElement = document.querySelector("#conditioner");
+  conditionerElement.classList.remove("hidden");
+
   axios.get(apiUrl).then(generateRecipe);
 }
 
