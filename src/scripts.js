@@ -20,6 +20,7 @@ function handleSubmit(event) {
 
   let conditionerElement = document.querySelector("#conditioner");
   conditionerElement.classList.remove("hidden");
+  conditionerElement.innerHTML = `<span class=generating>⏳ ⏳ ⏳ generating conditioner recipe........</span>`;
 
   axios.get(apiUrl).then(generateRecipe);
 }

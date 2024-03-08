@@ -71,6 +71,23 @@ form {
   display: none;
 }
 
+.generating {
+  font-size: 12px;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
 footer {
   text-align: center;
   font-size: 13px;
