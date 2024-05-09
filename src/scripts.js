@@ -25,7 +25,5 @@ function handleSubmit(event) {
   axios.get(apiUrl).then(generateRecipe);
 }
 
-let conditionerFormElement = document.querySelector(
-  "#conditioner-generator-form"
-);
+let conditionerFormElement = document.querySelector("#conditioner-generator-form");
 conditionerFormElement.addEventListener("submit", handleSubmit);
